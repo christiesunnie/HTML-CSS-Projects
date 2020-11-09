@@ -1,0 +1,114 @@
+/* styling body */
+body {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling nav bar */
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  border-right: solid 3px gray;
+}
+
+.bar {
+  overflow-y: auto;
+  max-height: 650px;
+}
+
+#bar-list {
+  padding-left: 0;
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 10px 30px 15px 30px;
+  border: solid 1px gray;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.1em;
+}
+
+/*Styling main section */
+
+#main-doc {
+  padding: 0 60px;
+  margin-left: 280px;
+}
+
+section {
+  padding-bottom: 5px;
+}
+
+div {
+  color: gray;
+  font-size: 1.05em;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  padding: 7px;
+}
+
+code {
+  border: solid 1px #f7f7f7;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 20px 10px;
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* Responsive screen */
+
+@media screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  #navbar {
+    position: relative;
+    background-color: white;
+  }
+
+  .bar {
+    overflow-y: auto;
+    max-height: 250px;
+    padding-right: 0;
+    border: solid 3px gray;
+  }
+
+#bar-list {
+    margin: 0;
+}
+
+.list {
+    border: solid 1px gray;
+}
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0 40px;
+  }
+}
